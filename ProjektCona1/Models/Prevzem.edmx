@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ConaPrevzemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Month">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="month" Type="int" />
+          <Property Name="year" Type="int" />
+          <Property Name="mesečnePadavine" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="IdPostaje" Type="int" />
+        </EntityType>
+        <EntityType Name="Podatki">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPostaje" Type="int" Nullable="false" />
+          <Property Name="Cas" Type="datetime" />
+          <Property Name="Temp" Type="decimal" Precision="18" Scale="5" />
+          <Property Name="Vlaga" Type="decimal" Precision="18" Scale="5" />
+          <Property Name="Tlak" Type="decimal" Precision="18" Scale="5" />
+          <Property Name="Napetost" Type="decimal" Precision="18" Scale="5" />
+          <Property Name="Padavine" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Postaje">
+          <Key>
+            <PropertyRef Name="IdPostaje" />
+          </Key>
+          <Property Name="IdPostaje" Type="int" Nullable="false" />
+          <Property Name="Naslov" Type="varchar" MaxLength="50" />
+          <Property Name="ImePostaje" Type="nvarchar" MaxLength="50" />
+          <Property Name="OpisPostaje" Type="nvarchar" MaxLength="50" />
+          <Property Name="Lat" Type="decimal" Precision="18" Scale="5" Nullable="false" />
+          <Property Name="Long" Type="decimal" Precision="18" Scale="5" Nullable="false" />
+          <Property Name="DrzavaPostaje" Type="nchar" MaxLength="3" />
+        </EntityType>
+        <EntityContainer Name="ConaPrevzemModelStoreContainer">
+          <EntitySet Name="Month" EntityType="Self.Month" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Podatki" EntityType="Self.Podatki" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Postaje" EntityType="Self.Postaje" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ConaPrevzemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Podatki">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPostaje" Type="Int32" Nullable="false" />
+          <Property Name="Cas" Type="DateTime" Precision="3" />
+          <Property Name="Temp" Type="Decimal" Precision="18" Scale="5" />
+          <Property Name="Vlaga" Type="Decimal" Precision="18" Scale="5" />
+          <Property Name="Tlak" Type="Decimal" Precision="18" Scale="5" />
+          <Property Name="Napetost" Type="Decimal" Precision="18" Scale="5" />
+          <Property Name="Padavine" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="Postaje" Relationship="Self.FK_Podatki_Postaje" FromRole="Podatki" ToRole="Postaje" />
+        </EntityType>
+        <EntityType Name="Postaje">
+          <Key>
+            <PropertyRef Name="IdPostaje" />
+          </Key>
+          <Property Name="IdPostaje" Type="Int32" Nullable="false" />
+          <Property Name="Naslov" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ImePostaje" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OpisPostaje" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Lat" Type="Decimal" Precision="18" Scale="5" Nullable="false" />
+          <Property Name="Long" Type="Decimal" Precision="18" Scale="5" Nullable="false" />
+          <Property Name="DrzavaPostaje" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Podatki" Relationship="Self.FK_Podatki_Postaje" FromRole="Postaje" ToRole="Podatki" />
+        </EntityType>
+        <Association Name="FK_Podatki_Postaje">
+          <End Role="Postaje" Type="Self.Postaje" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Podatki" Type="Self.Podatki" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Postaje">
+              <PropertyRef Name="IdPostaje" />
+            </Principal>
+            <Dependent Role="Podatki">
+              <PropertyRef Name="IdPostaje" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ConaPrevzemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Podatki" EntityType="Self.Podatki" />
+          <EntitySet Name="Postaje" EntityType="Self.Postaje" />
+          <AssociationSet Name="FK_Podatki_Postaje" Association="Self.FK_Podatki_Postaje">
+            <End Role="Postaje" EntitySet="Postaje" />
+            <End Role="Podatki" EntitySet="Podatki" />
+          </AssociationSet>
+          <EntitySet Name="Month" EntityType="ConaPrevzemModel.Month" />
+        </EntityContainer>
+        <EntityType Name="Month">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="month1" Type="Int32" />
+          <Property Name="year" Type="Int32" />
+          <Property Name="mesečnePadavine" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="IdPostaje" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ConaPrevzemModelStoreContainer" CdmEntityContainer="ConaPrevzemEntities">
+          <EntitySetMapping Name="Podatki">
+            <EntityTypeMapping TypeName="ConaPrevzemModel.Podatki">
+              <MappingFragment StoreEntitySet="Podatki">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IdPostaje" ColumnName="IdPostaje" />
+                <ScalarProperty Name="Cas" ColumnName="Cas" />
+                <ScalarProperty Name="Temp" ColumnName="Temp" />
+                <ScalarProperty Name="Vlaga" ColumnName="Vlaga" />
+                <ScalarProperty Name="Tlak" ColumnName="Tlak" />
+                <ScalarProperty Name="Napetost" ColumnName="Napetost" />
+                <ScalarProperty Name="Padavine" ColumnName="Padavine" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Postaje">
+            <EntityTypeMapping TypeName="ConaPrevzemModel.Postaje">
+              <MappingFragment StoreEntitySet="Postaje">
+                <ScalarProperty Name="IdPostaje" ColumnName="IdPostaje" />
+                <ScalarProperty Name="Naslov" ColumnName="Naslov" />
+                <ScalarProperty Name="ImePostaje" ColumnName="ImePostaje" />
+                <ScalarProperty Name="OpisPostaje" ColumnName="OpisPostaje" />
+                <ScalarProperty Name="Lat" ColumnName="Lat" />
+                <ScalarProperty Name="Long" ColumnName="Long" />
+                <ScalarProperty Name="DrzavaPostaje" ColumnName="DrzavaPostaje" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Month">
+            <EntityTypeMapping TypeName="ConaPrevzemModel.Month">
+              <MappingFragment StoreEntitySet="Month">
+                <ScalarProperty Name="IdPostaje" ColumnName="IdPostaje" />
+                <ScalarProperty Name="mesečnePadavine" ColumnName="mesečnePadavine" />
+                <ScalarProperty Name="year" ColumnName="year" />
+                <ScalarProperty Name="month1" ColumnName="month" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConaPrevzemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Podatki">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPostaje" Type="int" Nullable="false" />
+    <Property Name="Cas" Type="datetime" />
+    <Property Name="Temp" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="Vlaga" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="Tlak" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="Napetost" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="Padavine" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Postaje">
+    <Key>
+      <PropertyRef Name="IdPostaje" />
+    </Key>
+    <Property Name="IdPostaje" Type="int" Nullable="false" />
+    <Property Name="Naslov" Type="varchar" MaxLength="50" />
+    <Property Name="ImePostaje" Type="nvarchar" MaxLength="50" />
+    <Property Name="OpisPostaje" Type="nvarchar" MaxLength="50" />
+    <Property Name="Lat" Type="decimal" Precision="18" Scale="5" Nullable="false" />
+    <Property Name="Long" Type="decimal" Precision="18" Scale="5" Nullable="false" />
+    <Property Name="DrzavaPostaje" Type="nchar" MaxLength="3" />
+  </EntityType>
+  <Association Name="FK_Podatki_Postaje">
+    <End Role="Postaje" Type="Self.Postaje" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Podatki" Type="Self.Podatki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Postaje">
+        <PropertyRef Name="IdPostaje" />
+      </Principal>
+      <Dependent Role="Podatki">
+        <PropertyRef Name="IdPostaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ConaPrevzemModelStoreContainer">
+    <EntitySet Name="Podatki" EntityType="Self.Podatki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Postaje" EntityType="Self.Postaje" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Podatki_Postaje" Association="Self.FK_Podatki_Postaje">
+      <End Role="Postaje" EntitySet="Postaje" />
+      <End Role="Podatki" EntitySet="Podatki" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,181 @@
+﻿@model IEnumerable<ProjektCona1.Models.Podatki>
+
+@{
+    ViewBag.Title = "Start";
+}
+<div class="container text-center">
+    <div class="row row-eq-height">
+        <div class="col-md-9" style="padding-top:20px;">
+            <div id="map"></div>
+        </div>
+        <div class="col-md-3" style="padding-top:20px;">
+
+            <div id="vremeCont" class="thumbnail" style="height:100%;">
+                <div id="oblacnost" class="povezava povecaj center-block @ViewData["delDan"]@ViewData["oblacnost"]">
+                    <a target="_blank" href="http://vreme.arso.gov.si/napoved/Nova%20Gorica/graf/0"></a>
+                    <div id="pojavi" class="@ViewData["pojavi"]"></div>
+                </div>
+                <p><b>NOVA GORICA</b></p>
+                <p style="color:forestgreen;"><b>@ViewData["datum"]</b></p>
+                <p style="color:red;"><b>Temperatura: @ViewData["temp"]°C</b></p>
+                <p style="color:dodgerblue;"><b>Vlaga: @ViewData["vlaga"]%</b></p>
+                <p style="color:slategrey"><b>Veter: @ViewData["hitrost"]km/h @ViewData["smer"]</b></p>
+                <br />
+                <p><b>Opozorilo za dež:</b></p>
+                <div class="center-block povezava alarm @ViewData["stopnja"]">
+                    <a target="_blank" href="http://meteo.arso.gov.si/met/sl/warning/"></a>
+                    <p id="stopnjatext">- - -</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="live">
+    @Html.Partial("_postaje", Model)
+</div>
+
+
+
+<script>
+
+    $(function () {
+        var stopnjaClass = "@ViewData["stopnja"]";
+        switch (stopnjaClass) {
+            case "prvastopnja":
+                $('#stopnjatext').text("Brez posebnosti.")
+                break;
+            case "drugastopnja":
+                $('#stopnjatext').text("Bodite pozorni!")
+                break;
+            case "tretjastopnja":
+                $('#stopnjatext').text("Bodite pripravljeni!")
+                break;
+            case "cetrtastopnja":
+                $('#stopnjatext').text("Ukrepajte!")
+                break;
+            default:
+                $('#stopnjatext').text("Ni podatka.")
+        }
+    });
+   
+
+
+    $(function () {
+        setInterval(function () { $('#live').load('/Home/_indexPostaje') }, 10000);
+    });
+
+    $(document).ready(majhen);
+    $(window).on('resize', majhen);
+
+    function majhen() {
+        if ($(window).width() <= 600) {
+            $('#map').css("height", "250");
+            $('#arsologo').css("height", "100");
+        }
+        else {
+            $('#map').css("height", "490");
+            $('#arsologo').css("height", "auto");
+        };
+    }
+
+
+    function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+            center: new google.maps.LatLng(45.94766, 13.554405),
+            zoom: 11,
+            panControl: false,
+            zoomControl: false,
+            mapTypeControl: true,
+            scaleControl: false,
+            streetViewControl: false,
+            overviewMapControl: false,
+            rotateControl: false,
+            gestureHandling: 'cooperative'
+        };
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var marker1 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.941944, 13.615278),
+            label: "7"
+
+        });
+        var marker2 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.915278, 13.586944),
+            label: "8"
+
+        });
+        var marker3 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.949167,13.605556),
+            label: "9"
+
+        });
+        var marker4 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.903889, 13.531111),
+            label: "10"
+
+        });
+        var marker5 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.8775, 13.466667),
+            label: "11"
+
+        });
+        var marker6 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.922222, 13.435833),
+            label: "12"
+
+        });
+        var marker7 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.00217291,	13.66779388),
+            label: "1"
+
+        });
+        var marker8 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.95266875,	13.66272403),
+            label: "2"
+
+        });
+        var marker9 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.9488001	,13.64172182),
+            label: "3"
+
+        });
+        var marker10 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.93647792,	13.64260437),
+            label: "4"
+
+        });
+        var marker11 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.91839227,13.64838943),
+            label: "5"
+
+        });
+        var marker12 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.903233, 13.620772),
+            label: "6"
+
+        });
+        marker1.setMap(map);
+        marker2.setMap(map);
+        marker3.setMap(map);
+        marker4.setMap(map);
+        marker5.setMap(map);
+        marker6.setMap(map);
+        marker7.setMap(map);
+        marker8.setMap(map);
+        marker9.setMap(map);
+        marker10.setMap(map);
+        marker11.setMap(map);
+        marker12.setMap(map);
+
+        marker1.addListener('click', function () { location.href = "/Podatki/Postaja/1"; });
+        marker2.addListener('click', function () { location.href = "/Podatki/Postaja/2"; });
+        marker3.addListener('click', function () { location.href = "/Podatki/Postaja/3"; });
+
+    }
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYVCxh0G-I-FtUD6b1hMUWiQ6pY4XSpdk&callback=myMap"></script>

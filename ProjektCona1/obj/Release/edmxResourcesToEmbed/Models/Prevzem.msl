@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConaPrevzemModelStoreContainer" CdmEntityContainer="ConaPrevzemEntities">
+    <EntitySetMapping Name="Podatki">
+      <EntityTypeMapping TypeName="ConaPrevzemModel.Podatki">
+        <MappingFragment StoreEntitySet="Podatki">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdPostaje" ColumnName="IdPostaje" />
+          <ScalarProperty Name="Cas" ColumnName="Cas" />
+          <ScalarProperty Name="Temp" ColumnName="Temp" />
+          <ScalarProperty Name="Vlaga" ColumnName="Vlaga" />
+          <ScalarProperty Name="Tlak" ColumnName="Tlak" />
+          <ScalarProperty Name="Napetost" ColumnName="Napetost" />
+          <ScalarProperty Name="Padavine" ColumnName="Padavine" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Postaje">
+      <EntityTypeMapping TypeName="ConaPrevzemModel.Postaje">
+        <MappingFragment StoreEntitySet="Postaje">
+          <ScalarProperty Name="IdPostaje" ColumnName="IdPostaje" />
+          <ScalarProperty Name="Naslov" ColumnName="Naslov" />
+          <ScalarProperty Name="ImePostaje" ColumnName="ImePostaje" />
+          <ScalarProperty Name="OpisPostaje" ColumnName="OpisPostaje" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="Long" ColumnName="Long" />
+          <ScalarProperty Name="DrzavaPostaje" ColumnName="DrzavaPostaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Month">
+      <EntityTypeMapping TypeName="ConaPrevzemModel.Month">
+        <MappingFragment StoreEntitySet="Month">
+          <ScalarProperty Name="IdPostaje" ColumnName="IdPostaje" />
+          <ScalarProperty Name="mesečnePadavine" ColumnName="mesečnePadavine" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="month1" ColumnName="month" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

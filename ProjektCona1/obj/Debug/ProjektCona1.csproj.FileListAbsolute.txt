@@ -1,0 +1,490 @@
+D:\Projekt\ProjektCona1\ProjektCona1\bin\ApplicationInsights.config
+D:\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll.config
+D:\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.pdb
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe.config
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.rsp
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe.config
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.rsp
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.AppContext.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Collections.Immutable.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Console.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.Process.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Compression.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Pipes.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.AccessControl.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Claims.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Threading.Thread.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.ValueTuple.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe.config
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.rsp
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe
+D:\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe.config
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.ApplicationInsights.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.Web.Infrastructure.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Razor.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\WebGrease.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.pdb
+D:\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Razor.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.xml
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.xml
+D:\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.CoreCompileInputs.cache
+D:\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.dll
+D:\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.pdb
+D:\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.InitialCreate.resources
+D:\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.GenerateResource.Cache
+D:\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.AddPadavine.resources
+D:\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csprojResolveAssemblyReference.cache
+D:\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.Win32.Primitives.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.AppContext.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Console.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Globalization.Calendars.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.Compression.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.Compression.ZipFile.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.Primitives.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Net.Http.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Net.Sockets.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Algorithms.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Encoding.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Primitives.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\System.Xml.ReaderWriter.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.Common.dll
+D:\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ApplicationInsights.config
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll.config
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.pdb
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe.config
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.rsp
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe.config
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.rsp
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.AppContext.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Collections.Immutable.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Console.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.Process.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Compression.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Pipes.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.AccessControl.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Claims.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Threading.Thread.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.ValueTuple.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe.config
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.rsp
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe.config
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.ApplicationInsights.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.Web.Infrastructure.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.Win32.Primitives.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.AppContext.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Console.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Globalization.Calendars.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.Compression.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.Compression.ZipFile.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.Primitives.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Net.Http.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Net.Sockets.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Algorithms.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Encoding.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Primitives.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Razor.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Xml.ReaderWriter.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\WebGrease.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.Common.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.pdb
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Razor.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.xml
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csprojResolveAssemblyReference.cache
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.InitialCreate.resources
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.AddPadavine.resources
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.GenerateResource.Cache
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.CoreCompileInputs.cache
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.dll
+D:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.pdb
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ApplicationInsights.config
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll.config
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\ProjektCona1.pdb
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe.config
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csc.rsp
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe.config
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\csi.rsp
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.AppContext.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Collections.Immutable.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Console.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.Process.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Compression.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Pipes.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Reflection.Metadata.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.AccessControl.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Claims.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Threading.Thread.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.ValueTuple.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe.config
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\vbc.rsp
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe.config
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.ApplicationInsights.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.Web.Infrastructure.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.Win32.Primitives.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.AppContext.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Console.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Globalization.Calendars.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.Compression.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.Compression.ZipFile.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.Primitives.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Net.Http.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Net.Sockets.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Algorithms.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Encoding.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Primitives.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.X509Certificates.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Razor.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Xml.ReaderWriter.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\WebGrease.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.Common.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.pdb
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Razor.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.xml
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.InitialCreate.resources
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.AddPadavine.resources
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.GenerateResource.Cache
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.CoreCompileInputs.cache
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.dll
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.pdb
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csprojAssemblyReference.cache
+E:\Jan Čuk\Projekt\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.CopyComplete
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\ApplicationInsights.config
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll.config
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\ProjektCona1.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\ProjektCona1.pdb
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\csc.exe.config
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\csc.rsp
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\csi.exe.config
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\csi.rsp
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.AppContext.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Collections.Immutable.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Console.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.Process.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Compression.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.IO.Pipes.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Reflection.Metadata.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.AccessControl.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Claims.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Threading.Thread.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.ValueTuple.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\vbc.exe.config
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\vbc.rsp
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\roslyn\VBCSCompiler.exe.config
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\EntityFramework.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.ApplicationInsights.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Web.Infrastructure.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Win32.Primitives.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.AppContext.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Console.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Globalization.Calendars.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.IO.Compression.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.IO.Compression.ZipFile.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.IO.FileSystem.Primitives.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Net.Http.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Net.Sockets.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Algorithms.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Encoding.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.Primitives.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Security.Cryptography.X509Certificates.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Razor.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Xml.ReaderWriter.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\WebGrease.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\X.PagedList.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.Common.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\X.PagedList.Mvc.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Antlr3.Runtime.pdb
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\EntityFramework.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\EntityFramework.SqlServer.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.DependencyCollector.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.Web.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AI.WindowsServer.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Newtonsoft.Json.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Helpers.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Mvc.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Razor.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Deployment.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.WebPages.Razor.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\System.Web.Optimization.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.InitialCreate.resources
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.Migrations.AddPadavine.resources
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.GenerateResource.cache
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.CoreCompileInputs.cache
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csproj.CopyComplete
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.pdb
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\obj\Debug\ProjektCona1.csprojAssemblyReference.cache
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Owin.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Owin.Security.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Owin.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Owin.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.Owin.Security.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.Client.pdb
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.Core.pdb
+E:\Barbara\Cona\ProjektCona1\ProjektCona1\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb

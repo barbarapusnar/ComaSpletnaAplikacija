@@ -1,0 +1,217 @@
+﻿
+@{
+    ViewBag.Title = "Dež - v živo";
+}
+
+
+@section scripts{
+    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+
+    <script src="~/Scripts/Chart.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.signalR-2.4.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        function checkHTML5() {
+            var canvasForLineChart = document.getElementById("canvasForLineChart");
+            if (canvasForLineChart == null || canvasForLineChart == "") {
+                document.write("Browser doesn't support HTML5 2D Context");
+                return false;
+            }
+            if (canvasForLineChart.getContext) {
+
+            }
+            else {
+                document.write("Browser doesn't support HTML5 2D Context");
+                return false;
+            }
+        }
+
+        $(function () {
+            //If not HTML5 Support the Exit
+            if (checkHTML5() == false) return;
+
+            //Create the Hub
+            var chartHub = $.connection.chartHub;
+
+
+            //Call InitChartData
+            $.connection.hub.start().done(function () {
+                chartHub.server.initChartData();
+
+            });
+
+            //Call to Update LineChart from Server
+            chartHub.client.updateChart = function (line_data,line_data1) {
+                UpdateLineChart(line_data);  //Call the LineChart Update method
+                UpdateLineChart1(line_data1);
+            };
+            
+
+        });
+    </script>
+    <script>
+        function UpdateLineChart(data) {
+            //Set data returned from Server
+            $('#canvasForLineChart').remove(); // this is my <canvas> element
+            $('#chart-dan').append('<canvas id="canvasForLineChart"></canvas>');
+            var canvasForLineChart = document.getElementById("canvasForLineChart");
+            var context2DLine = canvasForLineChart.getContext("2d");
+            new Chart.Line(context2DLine, {
+
+                data: {
+                    labels: data.labelsData,
+                    datasets: [{
+                        fill: false,
+                        backgroundColor: 'orangered',
+                        borderColor: 'orangered',
+                        label: '1',
+                        data: data.lineChartData[0]
+                    },
+                    {
+                        fill: false,
+                        backgroundColor: '#A1ABDE',
+                        borderColor: '#A1ABDE',
+                        label: '2',
+                        data: data.lineChartData[1]
+
+                        },
+                        {
+                            fill: false,
+                            backgroundColor: 'rgba(0, 255, 0, 0.3)',
+                            borderColor: 'rgba(0, 255, 0, 0.3)',
+                            label: '3',
+                            data: data.lineChartData[2]
+
+                        },
+                        {
+                            fill: false,
+                            backgroundColor: 'gray',
+                            borderColor: 'gray',
+                            label: '4',
+                            data: data.lineChartData[3]
+
+                        },
+                        {
+                            fill: false,
+                            backgroundColor: 'black',
+                            borderColor: 'black',
+                            label: '5',
+                            data: data.lineChartData[4]
+
+                        },
+                        {
+                            fill: false,
+                            backgroundColor: 'blue',
+                            borderColor: 'blue',
+                            label: '6',
+                            data: data.lineChartData[5]
+
+                        }
+                    ]
+                },
+                //če ne daš tega se malo čudno obnaša,
+                //še testiraj
+                options: {
+                    ////tooltips: { enabled: false },
+                    ////hover: { mode: null },
+                    title: {
+                        display: true,
+                        text: 'Postaje v Sloveniji (osveži na 2 min)',
+                        fontSize: 16
+                    }
+                }
+
+            });
+            //Chart.Line(canvas, {
+            //    data: { labels: labels, datasets: datasets },
+            //    options: options
+            //})
+        }
+        function UpdateLineChart1(data) {
+            //Set data returned from Server
+            $('#canvasForLineChart1').remove(); // this is my <canvas> element
+            $('#chart-dan1').append('<canvas id="canvasForLineChart1"></canvas>');
+            var canvasForLineChart1 = document.getElementById("canvasForLineChart1");
+            var context2DLine = canvasForLineChart1.getContext("2d");
+            new Chart.Line(context2DLine, {
+
+                data: {
+                    labels: data.labelsData,
+                    datasets: [{
+                        fill: false,
+                        backgroundColor: 'orangered',
+                        borderColor: 'orangered',
+                        label: '7',
+                        data: data.lineChartData[0]
+                    },
+                    {
+                        fill: false,
+                        backgroundColor: '#A1ABDE',
+                        borderColor: '#A1ABDE',
+                        label: '8',
+                        data: data.lineChartData[1]
+
+                    },
+                    {
+                        fill: false,
+                        backgroundColor: 'rgba(0, 255, 0, 0.3)',
+                        borderColor: 'rgba(0, 255, 0, 0.3)',
+                        label: '9',
+                        data: data.lineChartData[2]
+
+                    },
+                    {
+                        fill: false,
+                        backgroundColor: 'gray',
+                        borderColor: 'gray',
+                        label: '10',
+                        data: data.lineChartData[3]
+
+                    },
+                    {
+                        fill: false,
+                        backgroundColor: 'black',
+                        borderColor: 'black',
+                        label: '11',
+                        data: data.lineChartData[4]
+
+                    },
+                    {
+                        fill: false,
+                        backgroundColor: 'blue',
+                        borderColor: 'blue',
+                        label: '12',
+                        data: data.lineChartData[5]
+
+                    }
+                    ]
+                },
+                //če ne daš tega se malo čudno obnaša,
+                //še testiraj
+                options: {
+                    //tooltips: { enabled: false },
+                    //hover: { mode: null },
+                    title: {
+                        display: true,
+                        text: 'Postaje v Italiji (osveži na 2 min)',
+                        fontSize: 16
+                    }
+                }
+
+            });
+            //Chart.Line(canvas, {
+            //    data: { labels: labels, datasets: datasets },
+            //    options: options
+            //})
+        }
+    </script>
+}
+    <div class="container text-center">
+        <div id="chart-dan" style="border:2px solid black;border-radius:4px;background-color:rgba(255, 255, 255, 0.60);position:relative;width:100%;height:50%;min-width:300px;margin-top:20px;">
+            <canvas id="canvasForLineChart" style="height:100%"></canvas>
+        </div>
+        <div id="chart-dan1" style="border:2px solid black;border-radius:4px;background-color:rgba(255, 255, 255, 0.60);position:relative;width:100%;height:50%;min-width:300px;margin-top:20px;">
+            <canvas id="canvasForLineChart1" style="height:100%"></canvas>
+        </div>
+</div>
+

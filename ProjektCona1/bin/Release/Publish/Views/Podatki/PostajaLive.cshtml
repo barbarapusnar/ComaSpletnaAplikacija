@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ProjektCona1.Models.Podatki>
+@{
+    ViewBag.Title = "PostajaLive";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2 id="podatki">Postaja @ViewData["id"] ~ <i style="color:red">LIVE</i></h2>
+
+    <div class="btn-group btn-group-sm">
+        <a id="1" href="/Podatki/PostajaLive/1" class="btn btnmoj">1</a>
+        <a id="2" href="/Podatki/PostajaLive/2" class="btn btnmoj">2</a>
+        <a id="3" href="/Podatki/PostajaLive/3" class="btn btnmoj">3</a>
+        <a id="4" href="/Podatki/PostajaLive/4" class="btn btnmoj">4</a>
+        <a id="5" href="/Podatki/PostajaLive/5" class="btn btnmoj">5</a>
+        <a id="6" href="/Podatki/PostajaLive/6" class="btn btnmoj">6</a>
+        <a id="7" href="/Podatki/PostajaLive/7" class="btn btnmoj">7</a>
+        <a id="8" href="/Podatki/PostajaLive/8" class="btn btnmoj">8</a>
+        <a id="9" href="/Podatki/PostajaLive/9" class="btn btnmoj">9</a>
+        <a id="10" href="/Podatki/PostajaLive/10" class="btn btnmoj">10</a>
+        <a id="11" href="/Podatki/PostajaLive/11" class="btn btnmoj">11</a>
+        <a id="12" href="/Podatki/PostajaLive/12" class="btn btnmoj">12</a>
+    </div>
+
+    <div id="live">
+        @Html.Partial("_podatki", Model, new ViewDataDictionary { { "id", ViewData["id"] } })
+    </div>
+</div>
+
+<script>
+    $(function () {
+        setInterval(function () { $('#live').load('/Podatki/_PostajaLive/@ViewData["id"]') }, 10000);
+    });
+
+    $(document).ready(function () {
+        $('#@ViewData["id"]').addClass("focus");
+    });
+</script>

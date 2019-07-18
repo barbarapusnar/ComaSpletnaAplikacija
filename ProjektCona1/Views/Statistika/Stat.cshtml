@@ -1,0 +1,364 @@
+﻿
+@model ProjektCona1.Models.Data
+@{
+    ViewBag.Title = "Statistika padavin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <p><strong>"Napaka"</strong></p>
+        @if (TempData["ErrorMessage"] != null)
+        {<p> @TempData["ErrorMessage"] </p>}
+    </div>
+}
+<script src="~/Scripts/jquery-2.2.4.js"></script>
+<script src="~/Scripts/Chart.min.js"></script>
+
+@{
+    bool cookie = ((string)ViewData["Cookie"] != "");
+}
+
+<script type="text/javascript">
+    function configureDropDownLists1(selectYear, selectMonth, selectDay) {
+
+        var months = new Array(12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1);
+
+        //on every selectYear change, set selectMonth.value to "Izberite mesec"
+        //disable selectDay and set selectDay.Value to "Izberite dan"
+
+        selectMonth.disabled = false;
+        selectMonth.value = "Izberite mesec";
+        selectDay.disabled = true;
+        selectDay.value = "Izberite dan";
+
+        //empty dropdownlist and refill for every change
+        removeOptions(selectMonth);
+
+        //fill ddl with 12 months unless the last year is chosen,
+        //then fill with all the months up to now
+
+        if (selectYear.value != (@DateTime.Now.Year)) {
+            for (var i = 0; i < 12; i++) {
+                createOption(selectMonth, months[i], months[i]);
+            }
+        }
+        else
+        {
+            for (var i = 12-(@DateTime.Now.Month); i < 12; i++) {
+                createOption(selectMonth, months[i], months[i]);
+            }
+        }
+    }
+
+    function configureDropDownLists2(selectYear, selectMonth, selectDay) {
+        var days = new Array(31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1);
+
+        if (selectMonth.value != "Izberite mesec") {
+            selectDay.disabled = false;
+            selectDay.value = "Izberite dan";
+        }
+        else
+        {
+            selectDay.disabled = true;
+            selectDay.value = "Izberite dan";
+        }
+
+        removeOptions(selectDay);
+
+        if (!((selectYear.value == (@DateTime.Now.Year)) && (selectMonth.value == (@DateTime.Now.Month)))) {
+            for (var i = 31-daysInMonth(selectMonth.value, selectYear.value) ; i < 31 ; i++) {
+                createOption(selectDay, days[i], days[i]);
+            }
+        }
+        else
+        {
+            for (var i = 31-(@DateTime.Now.Day) ; i < 31 ; i++) {
+                createOption(selectDay, days[i], days[i]);
+            }
+        }
+    }
+
+    function disableDdl(){
+        var True = true, False = false;
+
+        if ((@(Model.selectMonth == null)) || "@Model.selectMonth" == "Izberite mesec") {
+            document.getElementById('selectDay').disabled = true;
+        }
+    }
+
+    //fill with option elements
+    function createOption(ddl, text, value) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.innerHTML = text;
+        ddl.appendChild(opt);
+    }
+
+    //get how many numbers are in a certain month
+    function daysInMonth(month, year) {
+        return new Date(year, month, 0).getDate();
+    }
+
+    //remove all but the last one??
+    function removeOptions(ddl) {
+        for (var i = ddl.options.length-1; i >= 1; i--) {
+            ddl.remove(i);
+        }
+    }
+</script>
+<div class="container">
+    <div onload="">
+        @using (Html.BeginForm("Stat", "Statistika", FormMethod.Post, new { id = "submitForm" }))
+        {
+            <div class="row" style="margin-top:20px">
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-3" style="margin-bottom:7px;">
+                            @Html.DropDownListFor(model => model.selectPostaja, Model.selectPostajaList, new { name = "selectPostaja", @class = "form-control" })
+                        </div>
+                        <div class="col-sm-3" style="margin-bottom:7px;">
+                            @Html.DropDownListFor(model => model.selectYear, Model.selectYearList, new { name = "selectYear", onclick = "configureDropDownLists1(this, document.getElementById('selectMonth'), document.getElementById('selectDay'))", @class = "form-control" })
+                        </div>
+                        <div class="col-sm-3" style="margin-bottom:7px;">
+                            @Html.DropDownListFor(model => model.selectMonth, Model.selectMonthList, new { name = "selectMonth", onclick = "configureDropDownLists2(document.getElementById('selectYear'), this, document.getElementById('selectDay'))", @class = "form-control" })
+                        </div>
+                        <div class="col-sm-3" style="margin-bottom:1em;">
+                            @Html.DropDownListFor(model => model.selectDay, Model.selectDayList, new { name = "selectDay", @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <button type="submit" class="btn btn-primary btn-block" style="max-width: 280px; margin-bottom:7px; background-color: #1B3C8B;">Izriši</button>
+                        </div>
+                        <div class="col-sm-4">
+                            @Html.ActionLink("Resetiraj", "Stat", null, new { @class = "btn btn-primary btn-block", style = "max-width:280px; background-color: #1B3C8B;" })
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+
+    <script>
+        disableDdl();
+    </script>
+    <div class="row">
+        <div class="col-md-9" >
+            <div  id="daily" style="border:2px solid black;border-radius:4px;background-color:rgba(255, 255, 255, 0.60);position:relative;width:100%;height:450px;min-width:300px;margin-top:20px;">
+                <div >
+                    <canvas id="myChart" width="800" height="400" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" 
+             style="border:2px solid black;border-radius:4px;background-color:rgba(255, 255, 255, 0.60);margin-top:20px;overflow-y: scroll;height:450px">
+            @if (Model.hourListRounded != null)
+            {
+                <table style="margin-top:15px;" class="podatki table table-hover table-responsive table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>
+                                Ura
+                            </th>
+                            <th>
+                                Padavine (mm)
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.hourListRounded)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DatePart)
+                                </td>
+                                <td style="text-align:right">
+                                    @Html.DisplayFor(modelItem => item.Sum)
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            @if (Model.dayListRounded != null)
+            {
+                <table style="margin-top:15px;" class="podatki table table-hover table-responsive table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>
+                                Dan
+                            </th>
+                            <th>
+                                Padavine (mm)
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.dayListRounded)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DatePart)
+                                </td>
+                                <td style="text-align:right">
+                                    @Html.DisplayFor(modelItem => item.Sum)
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            @if (Model.monthListRounded != null)
+            {
+                <table style="margin-top:15px;" class="podatki table table-hover table-responsive table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>
+                                Mesec
+                            </th>
+                            <th>
+                                Padavine (mm)
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.monthListRounded)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DatePart)
+                                </td>
+                                <td style="text-align:right">
+                                    @Html.DisplayFor(modelItem => item.Sum)
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var mocAliDelo;
+    if ("@Model.selectDay" != "" && !isNaN("@Model.selectDay"))
+    {
+        mocAliDelo = "<%=value%> mm";
+    }
+    else
+    {
+        mocAliDelo = "<%=value%> mm";
+    }
+
+
+    window.onload = function () {
+        var data1 = {
+            labels: [@Html.Raw(@Model.getDates)],
+            datasets:
+            [{
+                label: "Padavine",
+                    backgroundColor: 'rgba(0, 0, 255, 0.3)',
+                    borderColor: 'rgba(0, 0, 255, 0.4)',
+                highlightFill: "blue",
+                highlightStroke: "blue",
+                data: [@Model.getValues]
+        }]
+        };
+
+        var options1 = {
+            title: {
+                display: true,
+                text: 'Statistika padavin',
+                fontSize: 16
+            },
+            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+            scaleBeginAtZero: true,
+
+            //Boolean - Whether grid lines are shown across the chart
+            scaleShowGridLines: true,
+
+            //String - Colour of the grid lines
+            scaleGridLineColor: "rgba(0,0,0,.05)",
+
+            //Number - Width of the grid lines
+            scaleGridLineWidth: 1,
+
+            //Boolean - Whether to show horizontal lines (except X axis)
+            scaleShowHorizontalLines: true,
+
+            //Boolean - Whether to show vertical lines (except Y axis)
+            scaleShowVerticalLines: false,
+
+            //Boolean - If there is a stroke on each bar
+            barShowStroke: true,
+
+            //Number - Pixel width of the bar stroke
+            //barStrokeWidth: 2,
+
+            //Number - Spacing between each of the X value sets
+            barValueSpacing: 2,
+
+            // String - Template string for single tooltips
+            tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
+
+            // String - Template string for multiple tooltips
+            multiTooltipTemplate: "<%= value %>",
+
+            // Boolean - whether or not the chart should be responsive and resize when the browser does
+            responsive: true,
+
+            // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+            maintainAspectRatio: true,
+
+            //String - A legend template
+            //TODO
+            //legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+
+            //adding units to y axis values
+            scaleLabel: "mm"
+        }
+        var chart_config = { data: data1 ,options:options1};
+        var canvasForLineChart1 = document.getElementById("myChart");
+        var context2DLine = canvasForLineChart1.getContext("2d");
+        myChart = new Chart.Bar(context2DLine, chart_config);
+        myChart.update();
+    };
+
+    var holder = document.getElementById('myChart');
+
+    holder.onclick = function (evt) {
+        var activeBars = myChart.getElementAtEvent(evt);
+        var selectDay = document.getElementById('selectDay');
+        var selectMonth = document.getElementById('selectMonth');
+
+        if (activeBars[0] != undefined) {
+             if ("@Model.selectDay" != "" && !isNaN("@Model.selectDay"))
+            {
+
+            }
+            else if ("@Model.selectMonth" != "" && !isNaN("@Model.selectMonth"))
+            {
+                document.getElementById('selectDay').value = "" + myChart.data.labels[activeBars[0]._index];
+                document.getElementById('submitForm').submit();
+            }
+            else
+            {
+                document.getElementById('selectMonth').value = "" + myChart.data.labels[activeBars[0]._index];
+                document.getElementById('submitForm').submit();
+            }
+        }
+    }
+</script>
+
+
+
+

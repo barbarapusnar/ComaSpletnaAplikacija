@@ -1,0 +1,175 @@
+﻿@model IEnumerable<ProjektCona1.Models.Podatki>
+
+@{
+    Layout = null;
+}
+
+<div>
+
+    <div id="chart-dan" style="border:2px solid black;border-radius:4px;background-color:rgba(255, 255, 255, 0.60);position:relative;width:100%;height:400px;min-width:300px;margin-top:20px;">
+        <canvas id="bar-chart-dan"></canvas>
+    </div>
+
+    <table class="table table-hover" style="background-color:rgba(255, 255, 255, 0.60);border:2px solid black;border-radius:4px;margin-top:20px;">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Temp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vlaga)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Padavine)
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Reverse())
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cas)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Temp)°C
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vlaga)%
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Padavine) mm
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+<script>
+    var podatki = @Html.Raw(Json.Encode(Model));
+
+    var temp = podatki.map(function (item) {
+        return item.Temp
+    });
+    var datumi = podatki.map(function (item) {
+        var x = item.Cas.toString();
+        var konc = x.substr(6, 13);
+        var date = new Date(parseInt(konc));
+        var options = { hour: 'numeric', minute: 'numeric' }
+        var dateString = date.toLocaleString('de-DE', options);
+        return dateString;
+    });
+
+    var padavine = podatki.map(function (item) {
+        return item.Padavine
+    });
+
+    //var vlaga = podatki.map(function (item) {
+    //    return item.Vlaga
+    //});
+
+    new Chart(document.getElementById("bar-chart-dan"), {
+        type: 'bar',
+        data: {
+            labels:  datumi,
+            datasets: [
+            {
+                type: 'line',
+                label: "Temperatura",
+                backgroundColor: 'orangered',
+                borderColor: 'orangered',
+                borderWidth: 2,
+                data: temp,
+                fill: false,
+                yAxisID: 'yaxis2',
+                cubicInterpolationMode: 'monotone'
+            },
+                {
+                    type: 'bar',
+                    label: "Padavine",
+                    borderColor: '#A1ABDE',
+                    backgroundColor: "#A1ABDE",
+                    hoverBackgroundColor: "#959EC7",
+                    hoverBorderColor: "#959EC7",
+                    borderWidth: 2,
+                    data: padavine,
+                    yAxisID: 'yaxis1'
+                }
+
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                xAxes: [{
+                    barPercentage: 0.8,
+                    categoryPercentage: 1,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Datum',
+                        fontSize: 11
+                    },
+                }],
+                yAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Padavine',
+                        fontSize: 11
+                    },
+                    barPercentage: 0.85,
+                    categoryPercentage: 1,
+                    type: 'linear',
+                    id: 'yaxis1',
+                    display: true,
+                    position: 'right',
+                    ticks: {
+                        //max: 100,
+                        beginAtZero: true,
+                        callback: function (value, index, values) {
+                            return value + 'mm';
+                        }
+                    },
+                },
+                    {
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Temperatura',
+                            fontSize: 11
+                        },
+                        type: 'linear',
+                        id: 'yaxis2',
+                        display: true,
+                        position: 'left',
+                        ticks: {
+                            max: 50,
+                            beginAtZero: true,
+                            callback: function (value, index, values) {
+                                return value + '°C';
+                            }
+                        },
+                        gridLines: {
+                            drawOnChartArea: false,
+                        }
+                    }]
+            },
+            legend: { display: true },
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
+            title: {
+                display: true,
+                text: 'Temperatura in padavine zadnjih 24ur',
+                fontSize: 16
+            },
+            showXLabels: 10
+        }
+    });
+</script>
+
+

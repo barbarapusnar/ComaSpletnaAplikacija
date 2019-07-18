@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Projekt Cona</title>
+    <script src="~/Scripts/moment.js"></script>
+    <script src="~/Scripts/Chart.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="height:100%;">
+    <div id="zgoraj" class="navbar navbar-inverse navbar-fixed-top" style="transition:0.5s;">
+        <div id="navcont" class="container-fluid" style="padding-left:15px;padding-right:15px;vertical-align:central;">
+            <div id="glava" class="navbar-header" style="display:inline-block">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="position:fixed;right:5px;vertical-align:central;">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/Home/Indexeng" style="padding:5px;" class="text-center">
+                    <img src="~/Slike/cona1.jpg" class="img-rounded" height="80" alt="Project Cona" title="Project Cona" id="conalogo" />
+                </a>
+                <button type="button" id="navbtnstil1" class="navbar-btn text-center navbtnstil1" onclick="openNav()"><span class="glyphicon glyphicon-th-list"></span><span class="izgine">&nbsp;Navigation</span></button>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Home/Index"><img src="~/Slike/sloveniaicon.png" title="Slovensko" height="30" /></a></li>
+                    <li><a href="/Home/Indexita"><img src="~/Slike/italyicon.png" title="Italiano" height="30" /></a></li>
+                    <li><a href="/Home/Indexeng"><img src="~/Slike/ukicon.png" title="English" height="30" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sidenav" id="stranska">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/Home/Indexeng">Start</a>
+        <a href="/Podatki">All data</a>
+        <a href="#sipostaje" data-toggle="collapse">SI Stations<span class="caret"></span></a>
+        <div id="sipostaje" class="collapse">
+            <a href="/Podatki">Station1</a>
+            <a href="/Podatki">Station2</a>
+            <a href="/Podatki">Station3</a>
+            <a href="/Podatki">Station4</a>
+            <a href="/Podatki">Station5</a>
+            <a href="#">Station</a>
+        </div>
+        <a href="#itpostaje" data-toggle="collapse">IT Stations<span class="caret"></span></a>
+        <div id="itpostaje" class="collapse">
+            <a href="#">Station7</a>
+            <a href="#">Station8</a>
+            <a href="#">Station9</a>
+            <a href="#">Station10</a>
+            <a href="#">Station11</a>
+            <a href="#">Station12</a>
+        </div>
+        <a href="/Arso">ARSO</a>
+        <a href="#">Project Cona</a>
+    </div>
+    <div id="main" class="container-fluid body-content" style="height:100%;display:flex;flex-direction:column;">
+        <div style="flex: 1 0 auto;padding-left:15px;padding-right:15px;">
+            @RenderBody()
+        </div>
+        <footer id="spodaj" class="text-center" style="display:inline-block;background-color:#98C222;width:100%;padding:5px;transition:0.5s;border-top: 2px solid black;flex-shrink: 0;">
+            <img class="img-rounded" src="~/Slike/irisacqua.jpg" height="50" style="margin-bottom:2px;" />
+            <img class="img-rounded" src="~/Slike/vikng.jpg" height="50" />
+            <img class="img-rounded" src="~/Slike/scng1.png" height="50" />
+        </footer>
+    </div>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("stranska").style.display = "block";
+            document.getElementById("navbtnstil1").style.display = "none";
+            //document.getElementById("main").style.marginLeft = "190px";
+            //document.getElementById("zgoraj").style.marginLeft = "190px";
+        }
+
+
+        function closeNav() {
+            document.getElementById("stranska").style.display = "none";
+            //document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("navbtnstil1").style.display = "inline-block";
+            //document.getElementById("zgoraj").style.marginLeft = "initial";
+        }
+    </script>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <script src="~/Scripts/globalize/globalize.js"></script>
+        <script src="~/Scripts/globalize/cultures/globalize.culture.@(System.Threading.Thread.CurrentThread.CurrentCulture.Name).js"></script>
+        <script>
+    $.validator.methods.number = function (value, element) {
+        return this.optional(element) ||
+            !isNaN(Globalize.parseFloat(value));
+    }
+    $(document).ready(function () {
+        Globalize.culture('@(System.Threading.Thread.CurrentThread.CurrentCulture.Name)');
+
+    });
+        </script>
+        <script>
+            jQuery.extend(jQuery.validator.methods, {
+                range: function (value, element, param) {
+                    //Use the Globalization plugin to parse the value
+                    var val = Globalize.parseFloat(value);
+                    return this.optional(element) || (
+                        val >= param[0] && val <= param[1]);
+                }
+            });
+            $.validator.methods.date = function (value, element) {
+                return this.optional(element) ||
+                    Globalize.parseDate(value) ||
+                    Globalize.parseDate(value, "yyyy-MM-dd");
+            }
+        </script>
+    }
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

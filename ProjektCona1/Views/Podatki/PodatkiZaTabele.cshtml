@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProjektCona1.Models.ZaTabele>
+
+
+<table class="table table-hover" style="background-color:rgba(255, 255, 255, 0.60)">
+    <tr>
+        <th>
+            Datum
+        </th>
+        <th>
+            Ura
+        </th>
+        <th>
+            Temp. max
+        </th>
+        <th>
+            Temp. min
+        </th>
+        <th>
+            Padavine
+        </th>
+        <th>
+            Vlažnost
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.datum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tempMax)°C
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tempMin)°C
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.padSUM)mm
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vlagaAVG)%
+        </td>
+        
+    </tr>
+}
+
+</table>

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ProjektCona1.Models.Podatki>
+
+
+@{
+    ViewBag.Title = "Podatki";
+}
+
+@using X.PagedList.Mvc; 
+@using X.PagedList; 
+
+
+<div class="container">
+
+    <h2 id="podatki">Podatki</h2>
+
+    <div>
+        @Html.PagedListPager((IPagedList)ViewBag.OnePageOfData, page => Url.Action("Index", new { page }))
+    </div>
+
+    <table class="table table-hover" style="background-color:rgba(255, 255, 255, 0.60);border:2px solid black;border-radius:4px;">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPostaje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Temp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vlaga)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Padavine)
+            </th>
+        </tr>
+
+        @foreach (var item in ViewBag.OnePageOfData)
+        {
+            <tr>
+                <td>
+                    @item.IdPostaje
+                </td>
+                <td>
+                    @item.Cas
+                </td>
+                <td>
+                    @item.Temp°C
+                </td>
+                <td>
+                    @item.Vlaga%
+                </td>
+                <td>
+                    @item.Padavine mm
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
